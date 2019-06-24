@@ -14,6 +14,8 @@
 #mpg2 {
   font-size: 20px;
   color: white;
+  margin-top: 17%;
+  text-align: right;
 }
 #tarjetas {
 	color: white;
@@ -22,12 +24,67 @@
 }
 #banermpg {
 	background: #0097f0;
-	padding: 2%;
+	height: 60px;
 }
 #paga {
 	float: right;
-	width: 30%;
+	width: 70%;
 	height: 70px;
 	font-size: 30px;
 }
+#left {
+	width: 30%;
+	margin-left: 13.5%;
+	float: left;
+	margin-top: -6%;
+}
+#right {
+	width: 30%;
+	margin-right: 13.5%;
+	float: right;
+	margin-top: -3%;
+}
+
+@media (max-width: 700px) {
+
+	#banermpg {
+		height: 300px;
+	}
+	#left {
+		width: 100%;
+	}
+	#right {
+		width: 100%;
+		margin-top: 15%;
+	}
+	#mpg {
+  	font-size: 25px;
+  	color: white;
+  	text-align: left;
+  	margin-top: 10%;
+	}
+	#mpg2 {
+  	font-size: 20px;
+  	color: white;
+  	margin-top: 20%;
+  	text-align: right;
+	}
+	#paga {
+	float: center;
+	margin-right: 13%;
+	width: 50%;
+	height: 70px;
+	font-size: 30px;
+	}
+	#tarjetas {
+	color: white;
+	font-size: 300%;
+	margin-right: 1%;
+	margin-top: -5%;
+	}
+	#tarjeta {
+		margin-left: 13%;
+	}
+}
+
 >>>>>>> f11e2d7383391c93b4d669712bdb77190a7c5cb1

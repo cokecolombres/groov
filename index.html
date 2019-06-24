@@ -23,6 +23,9 @@
   <!-- Custom styles for this template -->
   <link href="css/agency.min.css" rel="stylesheet">
 
+  <!-- Icono de pestana-->
+  <link rel="icon" type="image/png" href="img/logos/gnegra.png">
+
 </head>
 
 <body id="page-top">
@@ -31,7 +34,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
       <a href="#page-top"><img  class="navbar-brand" width="200" src="img/logos/groov.png"></a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <button style="margin-right: 12%;" class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
       </button>
@@ -49,7 +52,7 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link btn js-scroll-trigger" href="#banermpg">Consegui tu entrada</a>
+            <a class="nav-link btn js-scroll-trigger" href="#banermpg">Consigue tu entrada</a>
           </li>
         </ul>
       </div>
@@ -363,15 +366,15 @@
     </div>
   </section>
   <section id="banermpg">
-    <div class="container">
-      <a href="https://www.mercadopago.com/mla/checkout/start?pref_id=187795900-3e787b21-0552-45e4-a922-1b4adffadb3f"><button id="paga" type="button" class="btn btn-light"><p style="color: #0097f0;">Clic acá</p></button></a>
+    <div id="left">
         <p id="mpg"><strong>Pagá con Mercado Pago</strong></p>
-        
-        <p style="float: right;" id="mpg2">* Retirá tu entrada en la puerta</p>
-        <i id="tarjetas" class="fab fa-cc-amex"></i><i id="tarjetas" class="fab fa-cc-visa"></i><i id="tarjetas" class="fab fa-cc-mastercard"></i>
+        <div id="tarjeta">               
+          <i id="tarjetas" class="fab fa-cc-amex"></i><i id="tarjetas" class="fab fa-cc-visa"></i><i id="tarjetas" class="fab fa-cc-mastercard"></i>
+        </div>
     </div>
-    <div>
-      
+    <div id="right">
+        <a href="https://www.mercadopago.com/mla/checkout/start?pref_id=187795900-3e787b21-0552-45e4-a922-1b4adffadb3f"><button id="paga" type="button" class="btn btn-light"><p style="color: #0097f0;">Clic acá</p></button></a>
+        <p id="mpg2">* Retirá tu entrada en la puerta</p>
     </div>
   </section>
 
