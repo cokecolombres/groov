@@ -19,7 +19,7 @@
 }
 #tarjetas {
 	color: white;
-	font-size: 500%;
+	font-size: 300%;
 	margin-right: 1%;
 }
 #banermpg {
@@ -27,8 +27,7 @@
 	height: 60px;
 }
 #paga {
-	float: right;
-	width: 70%;
+	width: 75%;
 	height: 70px;
 	font-size: 30px;
 }

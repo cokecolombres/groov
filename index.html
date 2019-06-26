@@ -221,7 +221,7 @@
             <img class="mx-auto rounded-circle" src="img/team/lucioagustin.jpg" alt="">
             <h4 class="text-white">Lucio Agustín</h4>
             <p class="text-muted"><span class="badge badge-primary">Main DJ</span></p>
-            <a class="btn btn-outline-secondary" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Escuchar <i class="fa fa-caret-down"></i></a>
+            <a class="btn btn-outline-secondary" data-toggle="modal" data-target="#modal-lucio">Escuchar <i class="fa fa-caret-down"></i></a>
           </div>
         </div>
         <div class="col-sm-3">
@@ -229,7 +229,7 @@
             <img class="mx-auto rounded-circle" src="img/team/kevintoro.jpg" alt="">
             <h4 class="text-white">Kevin Toro</h4>
             <p class="text-muted"><span class="badge badge-primary">Main DJ</span></p>
-            <a class="btn btn-outline-secondary" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Escuchar <i class="fa fa-caret-down"></i></a>
+            <a class="btn btn-outline-secondary" data-toggle="modal" data-target="#modal-kevin">Escuchar <i class="fa fa-caret-down"></i></a>
           </div>
         </div>
         <div class="col-sm-3">
@@ -237,15 +237,15 @@
             <img class="mx-auto rounded-circle" src="img/team/ignacioroug.jpg" alt="">
             <h4 class="text-white">Ignacio Roug</h4>
             <p class="text-muted"><span class="badge badge-secondary">Warm Up</span></p>
-            <a class="btn btn-outline-secondary" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Escuchar <i class="fa fa-caret-down"></i></a>
+            <a class="btn btn-outline-secondary" data-toggle="modal" data-target="#modal-ignacio">Escuchar <i class="fa fa-caret-down"></i></a>
           </div>
         </div>
         <div class="col-sm-3">
           <div class="team-member">
             <img class="mx-auto rounded-circle" src="img/team/jorden.jpg" alt="">
-            <h4 class="text-white">Jordi Brunet</h4>
+            <h4 class="text-white">Jordi B</h4>
             <p class="text-muted"><span class="badge badge-warning">Opening</span></p>
-            <a class="btn btn-outline-secondary" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Escuchar <i class="fa fa-caret-down"></i></a>
+            <a class="btn btn-outline-secondary" data-toggle="modal" data-target="#modal-jordi">Escuchar <i class="fa fa-caret-down"></i></a>
           </div>
         </div>
       </div>
@@ -327,61 +327,6 @@
           </div>
         </div>
       </div>
-
-
-      <div class="row">
-        <!-- Button trigger modal -->
-       
-
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalCenterTitle">Ignacio Roug <span class="badge badge-secondary">Warm Up</span></h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <div class="row">
-                  <div class="col">
-                    <div class="team-member">
-                      <img class="mx-auto rounded-circle" src="img/team/lucioagustin.jpg" alt="">
-                      <h4>Ignacio Roug</h4>
-                      <p class="text-muted">Minimal Deep Tech</p>
-                      <ul class="list-inline social-buttons">
-                        <li class="list-inline-item">
-                          <a href="#">
-                            <i class="fab fa-soundcloud"></i>
-                          </a>
-                        </li>
-                        <li class="list-inline-item">
-                          <a href="#">
-                            <i class="fab fa-spotify"></i>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <span>Fumando hierba - 2010</span>
-                    <iframe width="100%" height="300" scrolling="yes" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/558826011&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-                  </div>
-                </div>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- <div class="row">
-        <div class="col-lg-8 mx-auto text-center">
-          <p class="large text-muted">Te esperamos para disfrutar de una noche acompanada de un melodico minimal deep tech.</p>
-        </div>
-      </div> -->
     </div>
   </section>
   <!-- <section class="page-section-pt happy-clients" style="background-color: #848484">
@@ -436,15 +381,20 @@
     <div class="container"> 
       <div class="row">
         <div class="col">
-          <p id="mpg"><strong>Pagá con Mercado Pago</strong></p>
+          <img src="img/groov.png">
+        </div>
+        <div class="col">
+          <h4 class="text-white">Pagá con Mercado Pago</h4>
           <div id="tarjeta">               
             <i id="tarjetas" class="fab fa-cc-amex"></i><i id="tarjetas" class="fab fa-cc-visa"></i><i id="tarjetas" class="fab fa-cc-mastercard"></i>
           </div>
+          <br>
+          <a href="https://www.mercadopago.com/mla/checkout/start?pref_id=187795900-3e787b21-0552-45e4-a922-1b4adffadb3f"><button id="paga" type="button" class="btn btn-outline-primary">Clic acá</button></a>
         </div>
-        <div class="col">
+        <!-- <div class="col">
           <a href="https://www.mercadopago.com/mla/checkout/start?pref_id=187795900-3e787b21-0552-45e4-a922-1b4adffadb3f"><button id="paga" type="button" class="btn btn-light"><p style="color: #0097f0;">Clic acá</p></button></a>
           <p id="mpg2">* Retirá tu entrada en la puerta</p>
-        </div>
+        </div> -->
       </div>
     </div>
   </section>
@@ -608,33 +558,38 @@
 
   <!-- Portfolio Modals -->
 
-  <!-- Modal 1 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
+  <!-- Modal Lucio -->
+  <div class="modal fade" id="modal-lucio" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered  modal-xl" role="document">
       <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
+       <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Groov - Episode 001</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
-        <div class="container">
+        <div class="modal-body">
           <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/01-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Threads</li>
-                  <li>Category: Illustration</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close Project</button>
+            <div class="col-md-4">
+              <div class="team-member">
+                <h4>Lucio Agustín</h4>
+                <p class="text-muted">Minimal Deep Tech</p>
+                <hr>
+                <a href="#">
+                  <i class="fab fa-spotify"></i>
+                  Ir a spotify
+                </a>
+                <hr>
+                <a href="#">
+                  <i class="fab fa-soundcloud"></i>
+                  Ir a soundcloud
+                </a>
               </div>
+            </div>
+            <div class="col-md-8">
+              <iframe width="90%" height="130" scrolling="yes" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/558826011&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+              <br>
+              <iframe width="90%" height="130" scrolling="yes" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/558826011&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
             </div>
           </div>
         </div>
@@ -642,33 +597,38 @@
     </div>
   </div>
 
-  <!-- Modal 2 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
+    <!-- Modal Kevin -->
+  <div class="modal fade" id="modal-kevin" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered  modal-xl" role="document">
       <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
+       <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Groov - Episode 001</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
-        <div class="container">
+        <div class="modal-body">
           <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/02-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Explore</li>
-                  <li>Category: Graphic Design</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close Project</button>
+            <div class="col-md-4">
+              <div class="team-member">
+                <h4>Kevin Toro</h4>
+                <p class="text-muted">Minimal Deep Tech</p>
+                <hr>
+                <a href="#">
+                  <i class="fab fa-spotify"></i>
+                  Ir a spotify
+                </a>
+                <hr>
+                <a href="#">
+                  <i class="fab fa-soundcloud"></i>
+                  Ir a soundcloud
+                </a>
               </div>
+            </div>
+            <div class="col-md-8">
+              <iframe width="90%" height="130" scrolling="yes" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/558826011&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+              <br>
+              <iframe width="90%" height="130" scrolling="yes" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/558826011&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
             </div>
           </div>
         </div>
@@ -676,33 +636,38 @@
     </div>
   </div>
 
-  <!-- Modal 3 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
+    <!-- Modal Lucio -->
+  <div class="modal fade" id="modal-ignacio" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered  modal-xl" role="document">
       <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
+       <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Groov - Episode 001</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
-        <div class="container">
+        <div class="modal-body">
           <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/03-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Finish</li>
-                  <li>Category: Identity</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close Project</button>
+            <div class="col-md-4">
+              <div class="team-member">
+                <h4>Ignacio Roug</h4>
+                <p class="text-muted">Minimal Deep Tech</p>
+                <hr>
+                <a href="#">
+                  <i class="fab fa-spotify"></i>
+                  Ir a spotify
+                </a>
+                <hr>
+                <a href="#">
+                  <i class="fab fa-soundcloud"></i>
+                  Ir a soundcloud
+                </a>
               </div>
+            </div>
+            <div class="col-md-8">
+              <iframe width="90%" height="130" scrolling="yes" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/558826011&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+              <br>
+              <iframe width="90%" height="130" scrolling="yes" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/558826011&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
             </div>
           </div>
         </div>
@@ -710,101 +675,38 @@
     </div>
   </div>
 
-  <!-- Modal 4 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
+    <!-- Modal Lucio -->
+  <div class="modal fade" id="modal-jordi" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered  modal-xl" role="document">
       <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
+       <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Groov - Episode 001</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
-        <div class="container">
+        <div class="modal-body">
           <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/04-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Lines</li>
-                  <li>Category: Branding</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close Project</button>
+            <div class="col-md-4">
+              <div class="team-member">
+                <h4>Jordi B</h4>
+                <p class="text-muted">Minimal Deep Tech</p>
+                <hr>
+                <a href="#">
+                  <i class="fab fa-spotify"></i>
+                  Ir a spotify
+                </a>
+                <hr>
+                <a href="#">
+                  <i class="fab fa-soundcloud"></i>
+                  Ir a soundcloud
+                </a>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal 5 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/05-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Southwest</li>
-                  <li>Category: Website Design</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close Project</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal 6 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/06-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Window</li>
-                  <li>Category: Photography</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close Project</button>
-              </div>
+            <div class="col-md-8">
+              <iframe width="90%" height="130" scrolling="yes" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/558826011&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+              <br>
+              <iframe width="90%" height="130" scrolling="yes" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/558826011&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
             </div>
           </div>
         </div>
