@@ -26,7 +26,6 @@
 
 }
 #paga {
-	width: 75%;
 	height: 70px;
 	font-size: 30px;
 }
@@ -52,7 +51,7 @@
 	
 	}
 	.mercadopg {
-
+		height: 330px;
 	}
 	#left {
 		width: 100%;
@@ -74,9 +73,6 @@
   	text-align: right;
 	}
 	#paga {
-	float: center;
-	margin-right: 13%;
-	width: 50%;
 	height: 70px;
 	font-size: 30px;
 	}
