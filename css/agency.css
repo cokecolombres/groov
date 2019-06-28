@@ -93,12 +93,12 @@ img::-moz-selection {
 }
 
 .btn-primary {
-  background-color: #fed136;
+  background-color: #f8c230 ;
   border-color: #fed136;
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
-  background-color: #fec810 !important;
+  background-color: #f8c230  !important;
   border-color: #fec810 !important;
   color: white;
 }
@@ -119,7 +119,7 @@ img::-moz-selection {
   text-transform: uppercase;
   color: white;
   border: 0;
-  background-color: #fed136;
+  background-color: #f8c230 ;
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
