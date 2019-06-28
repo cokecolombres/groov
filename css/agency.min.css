@@ -42,11 +42,17 @@
 	float: right;
 	margin-top: -3%;
 }
+.mercadopg {
+	height: 200px;		
+}
 
 @media (max-width: 700px) {
 
 	#banermpg {
 	
+	}
+	.mercadopg {
+
 	}
 	#left {
 		width: 100%;
@@ -58,7 +64,7 @@
 	#mpg {
   	font-size: 25px;
   	color: white;
-  	text-align: left;
+  	text-align: center;
   	margin-top: 10%;
 	}
 	#mpg2 {
